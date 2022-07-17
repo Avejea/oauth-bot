@@ -265,8 +265,7 @@ client.on("messageCreate", async (ctx) => {
         })
     }
     
-    if (cmd === "users") {
-      
+    if (cmd === "users") 
       if (db.get(`wl_${ctx.author.id}`) !== true && !config.owners.includes(ctx.author.id)) return;
       
 fs.readFile('./object.json', async function (err, data) {
