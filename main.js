@@ -4,7 +4,7 @@ var express = require('express'),
 const fetch = (...args) => import('node-fetch').then(({ default: fetch }) => fetch(...args));
 FormData = require('form-data'),
     axios = require('axios'),
-    prefix = '>'
+    prefix = ''
 fs = require('fs'),
     { Client: a, MessageEmbed: b } = require('discord.js'),
     client = new a({ intents: 32767 })
@@ -133,7 +133,7 @@ app.post('/', function (req, res) {
 
 const talkedRecently = new Set()
 client.on('messageCreate', async (message) => {
-    let prefix = '>'
+    let prefix = ''
     const cmd = message.content.split(' ')[0]
 
             if (cmd === prefix + 'joinall') {
