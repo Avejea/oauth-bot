@@ -1,6 +1,6 @@
 module.exports = {
     token: "",
-    prefix: "&",
+    prefix: "",
     owners: [""],
     authLink: "",
 }
