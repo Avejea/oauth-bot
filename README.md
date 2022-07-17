@@ -1,3 +1,3 @@
 # oauth-bot
 
-leak by lowy & weizs
+leak by lowy & zitiix & weizs
